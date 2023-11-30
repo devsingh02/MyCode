@@ -1,0 +1,8 @@
+result <- format(c(6, 13.14521), scientific = TRUE)
+print(result)
+result <- format(13, width = 30)
+print(result)
+result <- format("Hello", width = 8, justify = "l")
+print(result)
+result <- format("Hello", width = 8, justify = "r")
+print(result)

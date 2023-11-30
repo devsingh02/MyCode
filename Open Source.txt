@@ -1,0 +1,14 @@
+Starting to contribute to open source can be a great way to learn new skills, improve your resume, and make connections in the tech industry. Here are a few steps you can take to get started:
+
+Find a project that interests you: Look for a project that relates to your interests or that you would find personally useful.
+
+Set up your development environment: Follow the project's instructions for setting up a development environment. This typically involves installing any necessary software and dependencies.
+
+Familiarize yourself with the project's codebase: Look through the code to get a sense of how the project is structured and how it works.
+
+Find an issue to work on: Many open source projects have a list of open issues that need to be addressed. Look for one that is appropriate for a beginner and that you feel confident you can tackle.
+
+Make your contribution: Once you have identified an issue to work on, make your changes and submit a pull request (PR). The project maintainers will review your contribution and may suggest changes or improvements.
+
+Remember to be patient and don't get discouraged if your first contribution is not accepted. Contributing to open source is a learning process, and it can take time to get the hang of it.
+

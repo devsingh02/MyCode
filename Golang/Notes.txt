@@ -1,0 +1,158 @@
+/* PACKAGES
+•   first package must have the name -> "main"
+•   package name == folder name (for rest)
+
+Collection of Go files
+In go -> one folder = one package in ALL files.
+No two seperate files can have different package name.
+Prefer the name starts with lower case.
+
+"The package name can be an arbitrary identifier, though if you want 
+ a package to serve as an entry point for an executable program, 
+ it needs to be named “main” and have a function main() with no arguments 
+ and no return type."
+=> first package must have the name -> "main"
+*/
+
+/* MAIN 
+go needs a starting point -> "main" (since a program starts its execution at main).
+each package must have one main only (multiple files...one main).
+*/
+
+/* COMMANDS (terminal)
+•   go run main.go -> runs the current file
+•   go mod init <module-name> -> to initialize a module/project
+•   Ctrl+C -> breaks iteration/execution
+*/
+
+/* NOTES
+•   Variables should be defined above to use... go -> PROCEDURAL LANGUAGE
+•   Only in Go, functions can return multiple values at once
+*/
+
+/* BUILT-IN FUNCTIONS
+•   range -> returns <index,value> of an element
+•   for _, name := range names -> Blank identifier : since index won't be used in the 
+                                  program, go will throw an error. So bi "_" is used 
+                                  instead of "index".
+•   strings.Fields(name) -> returns index of string seperated by space  //strings -> package
+•   strings.Contains(email, "@") -> returns bool true/false
+*/
+
+/* SYNTAX
+1. Declaration
+•   var name = "Dev"        //implicitly decides string
+•   var name string = "Dev" //explicit initialization
+•   name := "Dev"           //implicit
+•   var name string         //must declare with full detail if initializing elsewhere
+    name = "Dev"
+•   var exit bool = count==0
+
+2. Printing
+•   fmt.Println("My name is", name, "Singh") //auto spaces, auto next line 
+•   fmt.Printf("My name is %v Singh\n",name) 
+    %v -> variable/array
+    %T -> datatype
+
+3. Input
+•   var age int
+    fmt.Scan(&age)     //"store in age's memory address"
+
+4. Arrays : fixed length
+•   var names = [50]string{"Dev","Shubh","Taru"}    //max 50 names
+•   var names [50]string
+    names[0] = "Dev" + "Singh"
+    names[1] = "Shubh"
+    names[2] = "Taru"
+•   len(names)  //50
+•   names := [50]string{}
+
+5. Slices : variable length (more flexible & powerful than Arrays)
+•   var names []string
+    names = append(names, "Dev" + "Singh")
+    names = append(names, "Shubh")
+    names = append(names, "Taru")
+•   names := []string{}
+    
+6. Loops : go has only for loop
+•   infinite loop
+    for {
+        ...
+    }
+•   traversal
+    for _, name := range names {
+        ...
+    }
+•   terminating
+    for {
+        if count == 100 {
+            break
+        }
+    }
+•   conditional
+    for <condition> {
+        ...
+    }
+
+7. If-Else 
+•   if <condition> {
+        ...
+    } else if <condition> {
+        ...
+    } else {
+
+    }
+
+8. Switch
+•   city := "DehraDun"
+    switch city {
+        case "Delhi":
+            //code
+        case "DehraDun":
+            //code
+        case "Busan", "Seoul":      //for both Busan || Seoul this code block will run
+            //code
+        default:
+            //code    
+    }
+
+9.  Functions : multiple returns possible
+•   void
+    func greet(name string, age int) {
+        ...
+    }
+•   single return
+    func sum(nums []int) int {
+        ...
+        return sum 
+    }
+•   multiple returns
+    func sum(a int, b int) (int, int, int) {
+        ...
+        return a, b, sum
+    }
+    // main()...
+    //  a, b, sum := sum(a, b)
+
+10. Multiple Packages 
+    Refer to the given folder
+•   first package must have the name -> "main"
+•   package name == folder name (for rest)
+•   Exported function -> start Capital
+•   Imported function -> import + ___.
+
+11. Maps : hashmap basically
+•   var names = make(map[int]string)
+                        <key><Value>
+                        <index><Value>
+    Keys should be unique
+•   names[<key>] -> returns Value
+
+12. Struct : classes basically
+•   syntax:-
+    type Human struct {
+        name string
+        age uint
+    }
+•   list of structs:-
+    var humans = make([]Human, 0)   // "[]" signifies list 

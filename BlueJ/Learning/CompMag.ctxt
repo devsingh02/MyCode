@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CompMag
+comment1.params=mm\ nn
+comment1.target=CompMag(int,\ int)
+comment2.params=a
+comment2.target=boolean\ comp(int)
+comment3.params=a
+comment3.target=boolean\ magic(int)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=
+comment5.target=void\ main()
+numComments=6
